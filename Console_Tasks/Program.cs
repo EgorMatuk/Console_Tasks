@@ -3,7 +3,7 @@ using static System.Console;
 using static System.Convert;
 
 //Функция ввода числа
-double TheNumEnter( string a)
+ double TheNumEnter( string a)
 {
     WriteLine($"Введите число {a}");
     return ToDouble(ReadLine());
@@ -78,6 +78,8 @@ int TwoNumCompareVAR2()
     }
     return 0;
 }
+
+
 //Results:
 //TwoNumCompare();
 //TwoNumCompareVAR2();
