@@ -2,7 +2,7 @@
 using static System.Console;
 using static System.Convert;
 
-//entering a number function
+//Функция ввода числа
 double TheNumEnter( string a)
 {
     WriteLine($"Введите число {a}");
@@ -10,12 +10,18 @@ double TheNumEnter( string a)
 }
 
 
-//VAR1
+//Вычислить значение функции  (1 + 1 / Pow(z,2)) - Sin(z)
 double FindZFunction(int z)
 {
     double result = (1 + 1 / Pow(z,2)) - Sin(z);
     return result;
 }
+
+
+
+/*
+Ввести два числа a и b. Если a<b, оба числа возвести в квадрат, если b a- оста
+вить их без изменения. Если b a , возвести эти числа в куб.*/
 int TwoNumCompare()
 {
     try
@@ -35,13 +41,19 @@ int TwoNumCompare()
     return 0;
 }
 
-//VAR2
+//Вычислить значение функции f(x)=  Sin(2 * Pow(x, 2)) + x / Cos(0.1) * x;
 double FindXFunction(int x)
 {
     double result = Sin(2 * Pow(x, 2)) + x / Cos(0.1) * x;
     return result;
 }
 
+
+
+
+/*
+Ввести два числа а1 и а2 если ни одно из них не равно нулю, то найти их произведе
+ние, в противном случае вывести их сумму.  */
 int TwoNumCompareVAR2()
 {
     try
@@ -66,8 +78,8 @@ int TwoNumCompareVAR2()
     return 0;
 }
 //Results:
-TwoNumCompare();
-TwoNumCompareVAR2();
+//TwoNumCompare();
+//TwoNumCompareVAR2();
 //WriteLine($"First funtion result: {Function_z(3)}");
 //WriteLine($"Var2 function result: {FindXFunction(1)}");
 
