@@ -1,9 +1,15 @@
 ﻿using static System.Math;
 using static System.Console;
 using static System.Convert;
-double Function_z(int z)
+using System.Reflection.Metadata.Ecma335;
+double FindZFunction(int z)
 {
     double result = (1 + 1 / Pow(z,2)) - Sin(z);
+    return result;
+}
+double FindXFunction(int x)
+{
+    double result = Sin(2 * Pow(x , 2)) + x / Cos(0.1) * x;
     return result;
 }
 int TwoNumCompare()
@@ -28,6 +34,8 @@ int TwoNumCompare()
     }
     return 0;
 }
+
 //TwoNumCompare();
 //WriteLine($"First funtion result: {Function_z(3)}");
+WriteLine($"Var2 function result: {FindXFunction(1)}");
 
