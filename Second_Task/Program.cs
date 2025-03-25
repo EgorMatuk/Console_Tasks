@@ -22,8 +22,8 @@ void FindZFunction()
 операциями, кроме умножения получить а4 за 2 операции.*/
 void PowFunction(double a)
 {
-    double b = a * a;
-    double result = b * b;
+    double sqrA = a * a;
+    double result = sqrA * sqrA;
     WriteLine(result);
 }
 FindZFunction();
