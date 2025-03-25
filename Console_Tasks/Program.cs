@@ -86,5 +86,25 @@ public static class Methods
         WriteLine($"Введите число {a}");
         return ToDouble(ReadLine());
     }
+
+    public static int[] ArrayComp(int length)
+    {
+        int [] arr = new int[length];
+        for(int i = 0; i <= arr.Length - 1; ++i)
+        {
+            arr[i] = ToInt32(TheNumEnter($"Array[{i + 1}] element:"));
+        }
+        return arr;
+    }
+
+    public static void ArrayElements(int[] arr)
+    {
+        WriteLine("Array elements:");
+        for (int i = 0; i <= arr.Length - 1 ; ++i)
+        {
+            WriteLine($"[{i}]-({arr[i]})");
+        }
+    }
 }
+
 
