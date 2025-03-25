@@ -1,15 +1,7 @@
 ﻿using static System.Math;
 using static System.Console;
 using static System.Convert;
-
-//Функция ввода числа
- double TheNumEnter( string a)
-{
-    WriteLine($"Введите число {a}");
-    return ToDouble(ReadLine());
-}
-
-
+using static Methods;
 
 
 // 1 ВАРИАНТ
@@ -79,7 +71,14 @@ int TwoNumCompareVAR2()
     return 0;
 }
 
-
+public static class Methods
+{
+    public static double TheNumEnter(string a)
+    {
+        WriteLine($"Введите число {a}");
+        return ToDouble(ReadLine());
+    }
+}
 //Results:
 //TwoNumCompare();
 //TwoNumCompareVAR2();
