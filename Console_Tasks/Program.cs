@@ -71,6 +71,14 @@ int TwoNumCompareVAR2()
     return 0;
 }
 
+
+
+
+//Results:
+TwoNumCompare();
+TwoNumCompareVAR2();
+WriteLine($"First funtion result: {FindZFunction(3)}");
+WriteLine($"Var2 function result: {FindXFunction(1)}");
 public static class Methods
 {
     public static double TheNumEnter(string a)
@@ -79,9 +87,4 @@ public static class Methods
         return ToDouble(ReadLine());
     }
 }
-//Results:
-//TwoNumCompare();
-//TwoNumCompareVAR2();
-//WriteLine($"First funtion result: {Function_z(3)}");
-//WriteLine($"Var2 function result: {FindXFunction(1)}");
 
