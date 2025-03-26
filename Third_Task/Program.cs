@@ -3,8 +3,6 @@ using static System.Console;
 using static Methods;
 using static System.Convert;
 using System.ComponentModel;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Numerics;
 
 
 /*Даны три действительных числа. Возвести в квадрат те из них, значения которых не
@@ -50,28 +48,21 @@ void CrowCount(int num)
 }
 
 /*Факториал числа A */
-int Factorial(int number)
+int Factorial(int num)
 {
-  if (number < 1)
-  {
-    return 0;
-  }
-  else if (number == 1)
-  {
-    return 1;
-  }
-  else
-  {
-    return number * Factorial(number - 1);
-  }
-}
-
-void RunFactorial()
-{
-    for (int i = 1; i < 15; i++)
+    if (num == 1) 
     {
-        WriteLine($"{i}! = {Factorial(i):N0}");
+        return 1;
+    }
+    else
+    {
+        int result = num;
+        for (int count = num; count >= 1;)
+        {
+            return result *= Factorial(count - 1);
+        }
+        return result;
     }
 }
-RunFactorial();
+WriteLine(Factorial(5));
 //CrowCount(ToInt32(TheNumEnter("Ворон")));
