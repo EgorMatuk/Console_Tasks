@@ -52,20 +52,18 @@ void CrowCount(int num)
 /*Факториал числа A */
 int Factorial(int number)
 {
-    {
-        if (number < 1)
-        {
-            return 0;
-        }
-        else if (number == 1)
-        {
-            return 1;
-        }
-        else
-        {
-            return number * Factorial(number - 1);
-        }
-    }
+  if (number < 1)
+  {
+    return 0;
+  }
+  else if (number == 1)
+  {
+    return 1;
+  }
+  else
+  {
+    return number * Factorial(number - 1);
+  }
 }
 
 void RunFactorial()
