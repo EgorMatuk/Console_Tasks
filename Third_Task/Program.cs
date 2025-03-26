@@ -2,6 +2,9 @@
 using static System.Console;
 using static Methods;
 using static System.Convert;
+using System.ComponentModel;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Numerics;
 
 
 /*Даны три действительных числа. Возвести в квадрат те из них, значения которых не
@@ -45,4 +48,32 @@ void CrowCount(int num)
         WriteLine("Ветка обломилась");
     }
 }
+
+/*Факториал числа A */
+int Factorial(int number)
+{
+    {
+        if (number < 1)
+        {
+            return 0;
+        }
+        else if (number == 1)
+        {
+            return 1;
+        }
+        else
+        {
+            return number * Factorial(number - 1);
+        }
+    }
+}
+
+void RunFactorial()
+{
+    for (int i = 1; i < 15; i++)
+    {
+        WriteLine($"{i}! = {Factorial(i):N0}");
+    }
+}
+RunFactorial();
 //CrowCount(ToInt32(TheNumEnter("Ворон")));
