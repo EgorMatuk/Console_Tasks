@@ -56,12 +56,7 @@ int Factorial(int num)
     }
     else
     {
-        int result = num;
-        for (int count = num; count >= 1;)
-        {
-            return result *= Factorial(count - 1);
-        }
-        return result;
+        return num *= Factorial(num - 1);
     }
 }
 WriteLine(Factorial(5));
