@@ -75,13 +75,13 @@ int FibImperative(int term)
         return FibImperative(term - 1) + FibImperative(term - 2);
     }
 }
-void RunFib( int num)
+void RunFib(int numFib)
 {
-    for(int i = 0; i <= num; num++)
+    for(int i = 1; i <= numFib; ++i)
     {
         Write($"{FibImperative(i)} ");
     }
 }
-RunFib(40);
+RunFib(5);
 //WriteLine(Factorial(5));
 //CrowCount(ToInt32(TheNumEnter("Ворон")));
