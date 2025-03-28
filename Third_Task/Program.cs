@@ -79,9 +79,9 @@ void RunFib(int numFib)
 {
     for(int i = 1; i <= numFib; ++i)
     {
-        Write($"{FibImperative(i)} ");
+        Write($"{i}-[{FibImperative(i)}],  ");
     }
 }
-RunFib(5);
+RunFib(15);
 //WriteLine(Factorial(5));
 //CrowCount(ToInt32(TheNumEnter("Ворон")));
