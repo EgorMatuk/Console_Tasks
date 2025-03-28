@@ -59,5 +59,29 @@ int Factorial(int num)
         return num *= Factorial(num - 1);
     }
 }
-WriteLine(Factorial(5));
+//Числа Фибоначчи
+int FibImperative(int term)
+{
+    if (term == 1)
+    {
+        return 0;
+    }
+    else if (term == 2)
+    {
+        return 1;
+    }
+    else
+    {
+        return FibImperative(term - 1) + FibImperative(term - 2);
+    }
+}
+void RunFib( int num)
+{
+    for(int i = 0; i <= num; num++)
+    {
+        Write($"{FibImperative(i)} ");
+    }
+}
+RunFib(40);
+//WriteLine(Factorial(5));
 //CrowCount(ToInt32(TheNumEnter("Ворон")));
